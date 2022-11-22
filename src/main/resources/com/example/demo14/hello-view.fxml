@@ -11,5 +11,6 @@
    <ListView fx:id="minListe" onMouseClicked="#klikPålinie" prefHeight="200.0" prefWidth="200.0" />
 
     <Label fx:id="welcomeText" />
+   <Button mnemonicParsing="false" onAction="#lukknap" text="Test af dialog" />
     <Button onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="74.0" text="Slet alt" />
 </VBox>
