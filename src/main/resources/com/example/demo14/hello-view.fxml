@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="233.0" prefWidth="201.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo14.HelloController">
+<VBox alignment="CENTER" prefHeight="233.0" prefWidth="201.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo14.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <ListView fx:id="minListe" onMouseClicked="#klikPålinie" prefHeight="200.0" prefWidth="200.0" />
 
     <Label fx:id="welcomeText" />
-   <Button mnemonicParsing="false" onAction="#lukknap" text="Test af dialog" />
+   <Button mnemonicParsing="false" onAction="#lukknap" prefHeight="37.0" prefWidth="155.0" text="Test af dialog">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <SepiaTone />
+      </effect>
+      <graphic>
+         <ImageView fitHeight="51.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@crow.png" />
+            </image>
+         </ImageView>
+      </graphic></Button>
     <Button onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="74.0" text="Slet alt" />
 </VBox>
